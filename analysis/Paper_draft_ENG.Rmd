@@ -1,5 +1,5 @@
 ---
-title: "Mortality Estimates of Departments in Argentina: the case of Pampean Region (2009-2011)"
+title: "Methodological Applications to Estimate Mortality In Small Areas: the Pampean Region in Argenitna (2009-2011)
 author: |
   Nicolás Sacco [^ns]; Iván Williams [^iw]; Bernardo L. Queiroz [^bq]
 
