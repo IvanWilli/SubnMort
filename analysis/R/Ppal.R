@@ -1,22 +1,4 @@
-##Código para estimador bayesiano empírico por método de contracción (Assuncao y otros, 2005). Arg 2009-2011
-##Aún Desprolijo. Realizado por Iván "Máster" Williams. Cambios menores realizados por N. "Nikito" Sacco.
-
-## Para todos los usuarios: poner working dir en la carpeta ppal del proyecto.
-
-##Tasas de mortalidad quinquenales y EV de departamentos. Años 2009-2011
-##Provincias: region pampeana
-##Estimación bayesiana empírica por método de contracción ("shrinkage"). 
-##Método de momentos para los parámetros
-
-###Principales Resultados (a partir de línea)
-#Diagnístico de Desconocidos (línea 122)
-#Gráficos de tasas de dptos por provincia (cada prov un pdf) (línea 361)
-#Gráficos de dispersión de esperanzas por provincia (línea 424)
-#Tabla resúmen de medidas de dispersión (línea 451)
-
 setwd("analysis")
-
-###Creo que habría que separar en la fila 130: un script para el merge y otro de metdología y resultados
 
 #paquetes q requiero
 library(foreign)
@@ -564,7 +546,9 @@ ineq_df <- EB_AM_exIC %>% filter(EDAD_q==0) %>%
 																						 	n_dptos = n() + 1, # no sé donde perdí uno 
 																							variance = var(ex.mean),
 																							cv = round(variance^.5/mean*100,1),
-																							rango = diff(range(ex.mean)))
+																							rango = diff(range(ex.mean)),
+																							min = min(ex.mean),
+																							max = max(ex.mean))
 
 
 

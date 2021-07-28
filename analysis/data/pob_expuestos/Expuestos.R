@@ -82,7 +82,7 @@ for (i in 1:2) {
   tmp = db_pP[db_pP$PROV == prov & db_pP$DEPRE == dpto,]
   plot(tmp$EDAD, tmp$TOTAL*3, lwd = 2, xlab = "Edad", ylab = "Población", t='p', pch=19, cex=.8)
   lines(0:99, pNames$N[pNames$PROV == prov & pNames$DEPRE == dpto], lwd = 3, col = 4)
-  title(paste("Prov", nomprov, ". Dpto ", unique(tmp$NOM)), cex.main = .8)
+  title(paste0("Prov. ", trimws(nomprov), ", Dpto. ", unique(tmp$NOM)), cex.main = .8)
   abline(v = seq(0,100,10), lty = 2, lwd=1, col='grey')
   NLocal=loess(TOTAL*3~EDAD,span=.1,data=tmp)
   lines(0:99, predict(NLocal, data.frame(EDAD=0:99)), col="red", lwd=2)
