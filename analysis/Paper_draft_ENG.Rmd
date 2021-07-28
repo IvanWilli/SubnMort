@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
+title: "Methodological Applications to Estimate Mortality In Small Areas: the Pampean Region in Argenitna (2009-2011)
+=======
 title: "A Methodological Approach Comparison to Estimate Mortality in Small Areas: the Pampean Region in Argentina (2009-2011)"
+>>>>>>> d8de35a2d81eea0e275baedfcc25ee4a736e442e
 author: |
   Nicolás Sacco [^ns]; Iván Williams [^iw]; Bernardo L. Queiroz [^bq]
 
